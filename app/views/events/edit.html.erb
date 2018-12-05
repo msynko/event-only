@@ -1,1 +1,6 @@
-events#edit page
+<h1>Editing <%= link_to @event.name,
+ event_path(@event) %></h1>
+
+<%= link_to 'Show all events', events_path %>
+
+<%= render 'event_form', event: @event %>
